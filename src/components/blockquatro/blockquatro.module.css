@@ -1,0 +1,92 @@
+.main {
+  margin: auto;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  overflow: hidden;
+  justify-content: center;
+  align-items: flex-start;
+  border: 1px red solid;
+  box-sizing: border-box;
+}
+.title {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-bottom: 20px;
+  margin-left: 0;
+  padding: 0;
+  color: white;
+  font-size: 4vh;
+  text-align: start;
+}
+.titlebox {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  align-self: flex-end;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-family: Textbase;
+}
+
+.textblock {
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 40px;
+  line-height: 6vh;
+  font-size: 1.5vw;
+  font-family: Textbase;
+  color: white;
+  border: 2px green solid
+}
+.blocktwoimage {
+  width: 100%;
+  margin: 0;
+  margin-right: 40px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px red solid;
+}
+
+.image {
+  width: auto;
+  height: 55vh;
+  object-fit: cover;
+  box-shadow: 5px 5px 0px white; /* смещение X, Y, blur = 0 */
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+  margin: 15px;
+  cursor: pointer;
+}
+.image:hover {
+  transform: scale(1.1);
+  box-shadow: 6px 6px 0px white; /* смещение X, Y, blur = 0 */
+}
+
+.videoblock{
+  margin: 0;
+  padding: 40px;
+  width: 80%;
+  border:2px white solid
+}
+
+@media screen and (max-width: 900px) {
+}
+
+@media screen and (max-width: 700px) {
+}

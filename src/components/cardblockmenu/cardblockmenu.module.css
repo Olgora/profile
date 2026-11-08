@@ -1,0 +1,80 @@
+.cardblock {
+  margin: 0;
+  padding: 0px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 4px white solid;
+  color: white;
+  font-size: 2rem;
+ font-family: TextBase;
+  text-align: left;
+  
+}
+
+ 
+.name {
+  margin: 0;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0;
+  align-self: start;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  line-height: 1.4;
+  
+   
+}
+
+.videoblock {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.image {
+  width: 100%;
+  object-fit: cover;
+  margin: auto;
+  cursor: pointer;
+}
+
+.text {
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0;
+  color: white;
+  font-size: 1.4rem;
+  font-family: TextBase;
+  text-align: justify;
+   
+}
+.link{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+   margin-bottom: 20px;
+}
+
+.link:hover{
+  color:blueviolet
+}
+
+@media screen and (max-width: 500px) {
+  .cardblock {
+  margin: 0;
+  padding: 0px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 4px white solid;
+  color: white;
+  font-size: 2rem;
+ font-family: TextBase;
+  text-align: left;
+  
+}
+}

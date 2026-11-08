@@ -1,0 +1,47 @@
+.wrapper {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.preview {
+  position: relative;
+  cursor: pointer;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.playButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  color: white;
+  pointer-events: none;
+  opacity: 0.9;
+  transition: transform 0.2s ease;
+}
+
+.preview:hover .playButton {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.iframeWrapper {
+  position: relative;
+  padding-top: 56.25%; /* 16:9 */
+}
+
+.iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}

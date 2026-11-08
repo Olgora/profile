@@ -1,0 +1,117 @@
+.gallery {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  width: auto;
+  height: auto;
+  margin: auto;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 100%;
+  object-fit: cover;
+  /*box-shadow: 5px 5px 0px white; /* смещение X, Y, blur = 0 */
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+  margin: auto;
+  cursor: pointer;
+}
+.image:hover {
+  transform: scale(1.03);
+  box-shadow: none;
+}
+
+/* Модальное окно */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(5px); /* блюр фона */
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  animation: fadeIn 0.25s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modalContent {
+  position: relative;
+  cursor: default;
+  animation: scaleIn 0.25s ease forwards;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.modalImage {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+}
+.buttons {
+  margin: 0;
+  padding: 2px;
+  width: 150px;
+  height: 50px;
+  border: 2px white solid;
+  border-radius: 100px;
+  position: fixed;
+  bottom: -50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: black;
+}
+
+.prevBtn,
+.nextBtn {
+  margin: auto;
+  font-size: 2rem;
+  background-color: black;
+  border: 2px white solid;
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.prevBtn:hover,
+.nextBtn:hover {
+  background: white;
+  color: black;
+}
+

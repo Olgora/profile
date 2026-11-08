@@ -1,0 +1,6 @@
+export const text_1 = "I always had a deep appreciation for more unique uses of rendering techniques, be it in order to create something surreal or to overcome limitations, so I undertook learning GLSL (and the version of it used in Godot) in order to give my games a more unique appearance."
+export const text_2 = "A study I did to recreate the shader effects of Balatro, as well as make them more modular and customizable."
+export const text_3 = "Two different dithering shaders: an ordered one, as well as a noise based one"
+export const text_4 = "Prototype of Corvus’s artstyle using a world space gradient shader combined with a depth based outline and noisy dithering."
+export const text_5 = "A depth based fog plane as well as a Fresnel based light beam cone, used in order to create high performance and retro styled versions of reflections and volumetric lighting."
+export const text_6 = "A day/night system initially made for an unreleased comedic point and click."

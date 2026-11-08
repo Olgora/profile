@@ -1,0 +1,63 @@
+.app {
+  width: 100%;
+  padding: 0;
+  margin: auto;
+  margin-right: 0;
+  margin-left: auto;
+  max-width: 1500px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow-x: hidden;
+  margin: 0 auto;
+  position: relative;
+  user-select: none;
+ 
+}
+.main {
+  width: 100%;
+  padding: 0;
+  margin: auto;
+  margin-right: 0;
+  margin-left: auto;
+  max-width: 1200px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  overflow-x: hidden;
+  margin: 0 auto;
+  user-select: none;
+ 
+}
+.menuleft {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: fit-content;
+
+}
+
+.blockmenu{
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  position: relative;
+}
+
+@media screen and (max-width: 1500px) {
+  .blockmenu{
+  margin: 0;
+  padding: 0;
+  width: 15px;
+  position: relative;
+  z-index: 1500;
+}
+}

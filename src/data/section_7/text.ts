@@ -1,0 +1,6 @@
+export const text_1 = "Made during the 2024 GMTK game jam along with a team for the topic Built to Scale. I was responsible for the ideas, level design as well as most of the code. "
+export const text_2 = "Its main inspiration is Katamari, but with a competitive twist – the snow balls you made can be used both to build up your own tower as well as to break the towers of others, which both staggers them and reduces their tower more than it would have built up yours. "
+export const text_3 = "The latter levels also introduce enemies with pathfinding that navigate to your tower and attempt to destroy it."
+export const text_4 = "In order to maintain a constant resolution as well as to get the ball to increase in size smoothly and not flicker during movement I made a system with per snowball dynamic resolution viewports, rendering the initial high res sprite in scale to the rest of the environment."
+export const text_5 = "This was also the game where I first introduced a multi level structure, as well as tutorials for the various mechanics in it. There are 3 level types: reach the goal, where contestants attempt to reach a specified tower height first, timed races, where the highest tower at the end wins, and tutorial levels, which introduce the core mechanics (movement, building, sabotage and enemies) individually in a controlled setting."
+ 

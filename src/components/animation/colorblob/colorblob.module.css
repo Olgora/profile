@@ -1,0 +1,20 @@
+/* AnimatedBackground.module.css */
+
+.container {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.blob {
+  position: absolute;
+  width: 90%;
+  height:90%;
+  border-radius: 50%;
+  filter: blur(500px);
+  pointer-events: none;
+
+  /* 🔥 магия смешивания цветов */
+  mix-blend-mode: screen;
+}

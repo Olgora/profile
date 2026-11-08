@@ -1,0 +1,10 @@
+.name{
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 500px) {
+  .name {
+    font-size: 30px !important;
+  }
+}

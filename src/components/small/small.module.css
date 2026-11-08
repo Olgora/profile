@@ -1,0 +1,40 @@
+.main {
+  margin: auto;
+  margin-top: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  overflow: hidden;
+  justify-content: center;
+  align-items: flex-start;
+  
+  box-sizing: border-box;
+}
+.cardsblock {
+  margin: 0;
+  padding: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+   
+  box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .cardsblock {
+  margin:auto;
+  padding: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+   
+  box-sizing: border-box;
+}
+
+}
+ 

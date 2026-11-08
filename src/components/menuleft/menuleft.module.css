@@ -1,0 +1,106 @@
+ /* ===== ОСНОВА (десктоп) ===== */
+.menulist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 250px;
+  font-family: textbase;
+  
+}
+
+/* обертка элемента */
+.menuitemWrapper {
+  margin: 5px 0;
+  position: relative;
+}
+
+/* пункт меню */
+.menuitem {
+  display: block;
+  margin: 0;
+  margin-left: 5px;
+  padding: 15px 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.2s;
+  font-size: 1.1rem;
+}
+
+.menuitem:hover {
+  text-decoration: underline;
+}
+
+/* активный пункт */
+.active {
+  font-weight: 600;
+}
+
+/* стрелка (базово скрыта) */
+.menuitem::after {
+  content: "➜";
+  position: absolute;
+  font-size: 2rem;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%) translateX(-10px);
+  opacity: 0;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+/* активная стрелка */
+.active::after {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+}
+
+/* ===== БУРГЕР (по умолчанию скрыт) ===== */
+.burger {
+  display: none;
+}
+
+/* ===== МОБИЛКА ===== */
+@media screen and (max-width: 1500px) {
+  
+  /* бургер */
+  .burger {
+    display: block;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 2000;
+    background:black;
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 6px 12px;
+    cursor: pointer;
+  }
+
+  /* меню как выезжающее */
+  .menulist {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100vh;
+    background-color: black;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    padding: 60px 15px 20px; /* отступ сверху под бургер */
+    overflow-y: auto;
+    z-index: 1500;
+  }
+
+  /* открытое состояние */
+  .open {
+    transform: translateX(0);
+  }
+
+  /* чуть компактнее пункты */
+  .menuitem {
+    padding: 12px 10px;
+    font-size: 16px;
+  }
+}

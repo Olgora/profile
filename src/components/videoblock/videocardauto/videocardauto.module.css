@@ -1,0 +1,82 @@
+.videoCardWrapper {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 0 ;
+  cursor: pointer;
+  overflow: hidden;
+  background: #000;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  
+}
+
+ 
+.videoThumbnail {
+  width: 100%;
+  display: block;
+}
+
+.videoOverlayIframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  pointer-events: none;
+}
+
+/* Модальное окно */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  width: 90%;
+  max-width: 900px;
+  position: relative;
+}
+
+.closeButton {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  background: rgba(255,255,255,0.8);
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.closeButton:hover {
+  background: rgba(255,255,255,1);
+}
+
+.modalIframe {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 */
+  border: none;
+  border-radius: 12px;
+  position: relative;
+}
+
+.modalIframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
